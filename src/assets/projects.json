@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Dashboard interativa",
+    "tags": ["api externa", "front end responsivo", "websocket"],
+    "technologies": ["HTML", "CSS", "JS", "VUE"],
+    "image": "/projects/dashboard.png",
+    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
+    "deploy": "https://gerenciador-tarefas.netlify.app"
+  },
+  {
+    "name": "Landing Page",
+    "tags": ["api-externa", "front-end responsivo", "websocket"],
+    "technologies": ["HTML", "CSS", "JS", "VUE"],
+    "image": "/projects/landingPage.png",
+    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
+    "deploy": "https://gerenciador-tarefas.netlify.app"
+  },
+  {
+    "name": "Gerenciador de Tarefas",
+    "tags": ["api externa", "front end responsivo"],
+    "technologies": ["HTML", "CSS", "JS", "VUE"],
+    "image": "/projects/gerenciadordetarefas.png",
+    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
+    "deploy": "https://gerenciador-tarefas.netlify.app"
+  },
+  {
+    "name": "Color theme",
+    "tags": ["api externa", "front end responsivo"],
+    "technologies": ["HTML", "CSS", "JS", "VUE"],
+    "image": "/projects/colortheme.png",
+    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
+    "deploy": "https://gerenciador-tarefas.netlify.app"
+  },
+  {
+    "name": "SPA Pomodoro",
+    "tags": ["api node", "api externa"],
+    "technologies": ["NODEJS"],
+    "image": "/projects/pomodoro.png",
+    "github": "https://github.com/seuUsuario/api-filmes",
+    "deploy": "https://api-filmes.onrender.com"
+  }
+]

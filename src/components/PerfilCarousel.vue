@@ -1,9 +1,9 @@
 <template>
-  <div id="carousel-perfil-container">
+  <div class="carousel-perfil-container">
     <input type="radio" name="position" checked />
     <input type="radio" name="position" />
 
-    <div id="carousel">
+    <div class="carousel-perfil">
       <div class="item">
         <img src="../assets/images/perfil/perfil-pixel.png" alt="">
       </div>
@@ -29,7 +29,7 @@
     justify-items: center;
   }
 
-  #carousel {
+  .carousel-perfil {
     grid-row: 1 / 2;
     grid-column: 1 / 5;
     width: 50vw;
@@ -89,7 +89,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(1):checked ~ #carousel {
+  input:nth-of-type(1):checked ~ .carousel-perfil {
     --position: 1;
   }
 
@@ -97,7 +97,7 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(2):checked ~ #carousel {
+  input:nth-of-type(2):checked ~ .carousel-perfil {
     --position: 2;
   }
 
