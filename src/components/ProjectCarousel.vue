@@ -34,11 +34,19 @@ import { ref } from 'vue';
 </script>
 
 <style scoped>
+  * {
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    scrollbar-width: none;
+    padding: 0;
+  }
 
   body {
     background: #111;
     color: white;
-    font-family: sans-serif;
   }
 
   h1 {
@@ -63,7 +71,7 @@ import { ref } from 'vue';
   }
 
   .nav-buttons button {
-    background: #333;
+    background: #0B0E1E;
     color: white;
     border: none;
     padding: 0.75rem 1rem;
@@ -74,7 +82,7 @@ import { ref } from 'vue';
   }
 
   .nav-buttons button:hover {
-    background: #555;
+    background: #584CB7;
   }
 </style>
 

@@ -5,7 +5,7 @@
     <div class="project-content">
       <h2>{{ project.name }}</h2>
       <ul class="tag-list">
-        <li v-for="tag in project.tags" :key="tag">{{ tag }}</li>
+        <li v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</li>
       </ul>
       
       <ul v-if="project.technologies && project.technologies.length" class="tec-list">
@@ -14,18 +14,21 @@
         </li>
       </ul>
 
-      <div class="links">
-        <a :href="project.github" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a :href="project.deploy" target="_blank" rel="noopener noreferrer">Deploy</a>
-      </div>
+      <ul class="links-list">
+        <li>
+          <a :href="project.github" target="_blank" rel="noopener noreferrer" class="tag">GitHub</a>
+        </li>
+        <li>
+          <a :href="project.deploy" target="_blank" rel="noopener noreferrer" class="tag">Deploy</a>
+        </li>
+      </ul>
+
     </div>
   </div>
 </template>
 
 <script setup>
   import { defineProps, toRefs } from 'vue';
-
-  
 
   const props = defineProps({
     project: {
@@ -51,14 +54,46 @@ function getIconUrl(name) {
 </script>
 
 
-<style>
+<style scoped>
+  * {
+    color: white;
+  }
+
+  .tag {
+    border-radius: 3px;
+    padding: .2em .5em .3em;
+    border-radius: 12px;
+    font-weight: 600;
+    margin: .25em .1em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+    font-size: 14px;   
+  }
+
+  .tag-list .tag {
+    
+    background-color: #A798FF;
+  }
+
+  .links-list a {
+    text-decoration: none;
+    
+    background-color: #251D7A;
+  }
+
+  li {
+    list-style: none;
+  }
 
   ul {
-    list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
     scrollbar-width: none;
+
+    margin-top: 12px;
   }
 
   .tec-img {
@@ -67,8 +102,8 @@ function getIconUrl(name) {
   }
 
   .project-card-container {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 
     flex: 0 0 300px;
     scroll-snap-align: center;
@@ -93,8 +128,8 @@ function getIconUrl(name) {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
+    background: #0B0E1E;
+    
     padding: 1rem;
     transform: translateY(70%);
     transition: transform 0.4s ease;
@@ -108,7 +143,7 @@ function getIconUrl(name) {
   .project-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #ccc;
+    
   }
   
 </style>

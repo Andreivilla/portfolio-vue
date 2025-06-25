@@ -15,8 +15,12 @@
 </script>
 
 <style>
+  @import url("@/assets/fonts/fonts.css");
   body {
-    font-family: 'Roboto', sans-serif;
+    background-color: #0C122F;
+    /*
+    margin-left: 25%;
+    margin-right: 25%;*/
   }
 
 

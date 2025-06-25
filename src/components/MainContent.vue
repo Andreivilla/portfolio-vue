@@ -25,8 +25,8 @@
 
 <style scoped>
   * {
-    font-family: 'Roboto';
     height: 100%;
+    color: white;
   }
   main {
     display: flex;
