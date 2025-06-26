@@ -53,7 +53,9 @@ import { ref } from 'vue';
     text-align: center;
     margin-bottom: 1rem;
   }
-
+  .carousel-container {
+    margin: 28px;
+  }
   .carousel {
     display: flex;
     gap: 1rem;
@@ -61,6 +63,7 @@ import { ref } from 'vue';
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 1rem;
+    padding: 0 28px;
   }
 
   .nav-buttons {

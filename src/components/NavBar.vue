@@ -8,12 +8,12 @@
         <nav>
           <input type="checkbox" id="sidebar-active">
           <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <img src="@/assets/images/icons/util/open-menu.svg" alt="">
           </label>
           <label id="overlay" for="sidebar-active"></label>
           <div class="links-container">
             <label for="sidebar-active" class="open-sidebar-button">
-              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+              <img src="@/assets/images/icons/util/close-menu.svg" alt="">
             </label>
 
             <a class="home-link" href="index.html"><h3>Home</h3></a> 
@@ -37,37 +37,26 @@
 
   header {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
-    display: flex;
-    z-index: 1000; /* pra ficar acima de tudo */
-    align-items: center;
-    justify-content: center;
+    
+    z-index: 1000; /* pra ficar acima de tudo */    
+    margin: 0;
+    padding: 0;
   }
 
   .nav-container {
-    width: 100%;
-    max-width: 1224px;/**-2x2 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #251D7A;
-
-    margin: 28px 28px 0;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 12px 22px;
-
-    height: 32px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #251D7A;
+    height: 60px;
     border: 1px solid white;
-    border-radius: 8px;  
-
+    border-radius: 8px;
   }
 
   h1 {
@@ -109,11 +98,7 @@
   nav .home-link{
     margin-right: auto;
   }
-  .icon {
-    width: 32px;
-    height: 32px;
-    fill: white;
-  }
+
   #sidebar-active{
     display: none;
   }
@@ -121,41 +106,48 @@
     display: none;
   }
 
-@media(max-width: 768px){
-  .links-container{
-    flex-direction: column;
-    align-items: flex-start;
+  @media(max-width: 768px){
+  
 
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 10;
-    width: 200px;
+    .links-container{
+      flex-direction: column;
+      align-items: flex-start;
 
-    background-color: #251D7A;
-    transition: 0.75s ease-out;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 10;
+      width: 200px;
+
+      background-color: #251D7A;
+      transition: 0.75s ease-out;
+    }
+    nav a{
+      box-sizing: border-box;
+      height: auto;
+      width: 100%;
+      padding: 4px 20px;
+      justify-content: flex-start;
+    }
+    nav img {
+      filter: invert(100%);
+      height: 32px;
+      width: 32px;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+      padding: 20px;
+      display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+      right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
   }
-  nav a{
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    padding: 4px 20px;
-    justify-content: flex-start;
-  }
-  .open-sidebar-button, .close-sidebar-button{
-    padding: 20px;
-    display: block;
-  }
-  #sidebar-active:checked ~ .links-container{
-    right: 0;
-  }
-  #sidebar-active:checked ~ #overlay{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-  }
-}
 </style>

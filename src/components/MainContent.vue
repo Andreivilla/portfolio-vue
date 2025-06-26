@@ -61,8 +61,10 @@
   main {
     color: white;
     display: flex;
+    align-items: center;
     width: 100%;
     height: 600px;
+    padding-top: 60px;
   }
 
   .title {
@@ -71,7 +73,7 @@
   
   aside, .perfil-img-container  {
     width: 50%; 
-    padding: 28px;
+    padding: 48px;
   } 
   PerfilCarousel {
     width: 20%;

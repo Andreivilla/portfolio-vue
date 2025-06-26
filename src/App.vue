@@ -3,6 +3,7 @@
   <MainContent></MainContent>
   <TechnologiesSection></TechnologiesSection>
   <ProjectCarousel></ProjectCarousel>
+  <FooterContent></FooterContent>
   
   
 </template>
@@ -12,6 +13,7 @@
   import MainContent from "./components/MainContent.vue"; 
   import ProjectCarousel from "./components/ProjectCarousel.vue";
   import TechnologiesSection from "./components/TechnologiesSection.vue";
+  import FooterContent from "./components/FooterContent.vue";
 
 
 </script>
