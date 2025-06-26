@@ -1,45 +1,103 @@
 <template>
   <main>
-    <aside style="background-color: red;">
-      <h2><span>Andrei Villa</span></h2>
-      <h2>Desenvolvedor Full-Stack</h2>
+    <aside>
+      <h1 class="title"><span>Andrei Villa</span></h1>
+      <h1>Desenvolvedor Full-Stack</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ad nemo in quis, maxime quae est fugiat unde cupiditate minus accusantium architecto repellat libero suscipit ducimus reprehenderit consequuntur blanditiis commodi.</p>
 
       <div class="social-wrapper">
-        <a href="#"><img class="social-link" src="images/icons/social/linkedin.png" alt="linkedin-logo"></a>
-        <a href="#"><img class="social-link" src="images/icons/social/instagram.png" alt="instagram-logo"></a>
-        <a href="#"><img class="social-link" src="images/icons/social/whatsapp.png" alt="whatsapp-logo"></a>
+        <a class="btn" href="">Contato</a>
+        <a class="btn" href="">Currículo</a>
       </div>
 
     </aside>
     
-    <PerfilCarousel style="background-color: blue;"></PerfilCarousel>
-
+    <div class="perfil-img-container">
+      <img src="@/assets/images/perfil/perfil-pixel.png" alt="">
+    </div>
   </main>
+
 </template>
 
 <script setup>
-  import PerfilCarousel from './PerfilCarousel.vue';
-
+  //import PerfilCarousel from './PerfilCarousel.vue';
+  
 </script>
 
 <style scoped>
-  * {
-    height: 100%;
-    color: white;
+  
+  .social-wrapper {
+    display: flex;
+    gap: 20px;
   }
+  
+  .btn {
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #2940D3;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+    transition: background-color 0.3s, color 0.3s;
+
+  }
+
+  .btn:hover {
+    background-color: #A798FF;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
   main {
+    color: white;
     display: flex;
     width: 100%;
+    height: 600px;
   }
-  aside {
+
+  .title {
+    color: #A798FF;
+  }
+  
+  aside, .perfil-img-container  {
     width: 50%; 
+    padding: 28px;
   } 
   PerfilCarousel {
     width: 20%;
   }
 
-  /*adicionar aqui o media que some o perfil*/
+  .perfil-img-container {
+    padding: 0 28px;
+  }
   
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: cover;
+  }
+  /*adicionar aqui o media que some o perfil*/
+  @media(max-width: 768px){
+    .perfil-img-container {
+      display: none;
+    }
+  main {
+    justify-content: center;
+    align-items: center;
+  }
+  aside {
+    text-align: center;
+  }
+  }  
 
 </style>

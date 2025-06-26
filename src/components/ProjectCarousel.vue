@@ -71,7 +71,7 @@ import { ref } from 'vue';
   }
 
   .nav-buttons button {
-    background: #0B0E1E;
+    background-color: #2940D3;
     color: white;
     border: none;
     padding: 0.75rem 1rem;
