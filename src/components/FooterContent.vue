@@ -1,5 +1,6 @@
 <template lang="">
   <footer>
+    <div class="footer-line"></div>
     <ContactLinks></ContactLinks>
     
   </footer>
@@ -13,6 +14,17 @@ import ContactLinks from './ContactLinks.vue';
 <style>
   footer {
     margin: 28px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
   }
+  .footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+  }
+
 </style>

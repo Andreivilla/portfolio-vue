@@ -93,13 +93,16 @@
     .perfil-img-container {
       display: none;
     }
-  main {
-    justify-content: center;
-    align-items: center;
-  }
-  aside {
-    text-align: center;
-  }
+    main {
+      justify-content: center;
+      align-items: center;
+    }
+    aside {
+      text-align: center;
+    }
+    .social-wrapper {
+      justify-content: center;
+    }
   }  
 
 </style>

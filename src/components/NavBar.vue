@@ -8,12 +8,12 @@
         <nav>
           <input type="checkbox" id="sidebar-active">
           <label for="sidebar-active" class="open-sidebar-button">
-            <img src="@/assets/images/icons/util/open-menu.svg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
           </label>
           <label id="overlay" for="sidebar-active"></label>
           <div class="links-container">
             <label for="sidebar-active" class="open-sidebar-button">
-              <img src="@/assets/images/icons/util/close-menu.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </label>
 
             <a class="home-link" href="index.html"><h3>Home</h3></a> 
@@ -104,6 +104,10 @@
   }
   .open-sidebar-button, .close-sidebar-button{
     display: none;
+  }
+
+  svg {
+    fill: white;
   }
 
   @media(max-width: 768px){

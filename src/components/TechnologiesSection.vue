@@ -52,62 +52,62 @@
   width: 100%;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  flex: 1 1 200px; /* Cresce, encolhe, base mínima */
-  max-width: 220px;
-  box-sizing: border-box;
-}
-
-.card img {
-  height: 52px;
-  width: auto;
-  margin: 20px 0;
-}
-
-.card h1 {
-  margin: 0;
-  font-size: 16px;
-}  
-.vue {
-  border-color: #3FB682;
-}
-.html {
-  border-color: #FE4E1C;
-}
-.css {
-  border-color: #0074BE;
-}
-.js {
-  border-color: #F8DC3E;
-}
-
-@media (max-width: 768px) {
-  section {
-    height: 100%;
-  }
-
   .card {
-    flex: 1 1 80px;
-    max-width: 100px;
-    padding: 8px;
-    height: auto; /* <- aqui está o truque */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 8px;
+    flex: 1 1 200px; /* Cresce, encolhe, base mínima */
+    max-width: 220px;
+    box-sizing: border-box;
   }
 
   .card img {
-    height: 32px;
-    margin: 10px 0;
+    height: 52px;
+    width: auto;
+    margin: 20px 0;
   }
 
   .card h1 {
-    font-size: 12px;
+    margin: 0;
+    font-size: 16px;
+  }  
+  .vue {
+    border-color: #3FB682;
   }
-}
+  .html {
+    border-color: #FE4E1C;
+  }
+  .css {
+    border-color: #0074BE;
+  }
+  .js {
+    border-color: #F8DC3E;
+  }
+
+  @media (max-width: 880px) {
+    section {
+      height: 100%;
+    }
+
+    .card {
+      flex: 1 1 80px;
+      max-width: 100px;
+      padding: 8px;
+      height: auto; /* <- aqui está o truque */
+    }
+
+    .card img {
+      height: 32px;
+      margin: 10px 0;
+    }
+
+    .card h1 {
+      font-size: 12px;
+    }
+  }
 
 
 </style>
