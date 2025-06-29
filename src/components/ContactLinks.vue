@@ -1,7 +1,7 @@
 <template>
   <h1>Vamos conversar?</h1>
   <p>Envie sua mensagem.</p>
-  <div class="contatc-container">    
+  <div class="contatc-container" id="contact">
     <div class="email-link">
       <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -105,7 +105,11 @@
     gap: 28px;
   }
   .link-item:hover {
-    background: #584CB7;
+    background-color: #1e32a5;
+    color: white;
+    border-color: #1e32a5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
   }
   .link-item svg {
     height: 90%;

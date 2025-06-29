@@ -85,7 +85,11 @@ import { ref } from 'vue';
   }
 
   .nav-buttons button:hover {
-    background: #584CB7;
+    background-color: #1e32a5;
+    color: white;
+    border-color: #1e32a5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
   }
 </style>
 

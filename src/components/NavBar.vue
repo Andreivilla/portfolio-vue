@@ -3,7 +3,6 @@
     <div class="nav-container">
       <div class="title">
         <h1>Andrei Villa</h1>
-        <!--<h1>V 0.1</h1>-->
       </div>
         <nav>
           <input type="checkbox" id="sidebar-active">
@@ -108,6 +107,12 @@
 
   svg {
     fill: white;
+    height: 48px;
+    width: 48px;
+  }
+
+  svg:hover {
+    fill: #A798FF;
   }
 
   @media(max-width: 768px){

@@ -6,14 +6,14 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ad nemo in quis, maxime quae est fugiat unde cupiditate minus accusantium architecto repellat libero suscipit ducimus reprehenderit consequuntur blanditiis commodi.</p>
 
       <div class="social-wrapper">
-        <a class="btn" href="">Contato</a>
+        <a class="btn" href="#contact">Contato</a>
         <a class="btn" href="">Currículo</a>
       </div>
 
     </aside>
     
     <div class="perfil-img-container">
-      <img src="@/assets/images/perfil/perfil-pixel.png" alt="">
+      <img src="@/assets/images/perfil/perfil-pixel.gif" alt="">
     </div>
   </main>
 
@@ -47,7 +47,11 @@
   }
 
   .btn:hover {
-    background-color: #A798FF;
+    background-color: #1e32a5;
+    color: white;
+    border-color: #1e32a5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
   }
 
   a {
