@@ -14,12 +14,10 @@
             <label for="sidebar-active" class="open-sidebar-button">
               <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </label>
-
-            <a class="home-link" href="index.html"><h3>Home</h3></a> 
-            <a href="about.html"><h3>About</h3></a> 
-            <a href="products.html"><h3>Products</h3></a>
-            <a href="blog.html"><h3>Blog</h3></a>
-            <a href="login.html"><h3>Login</h3></a>
+            
+            <a href=""><router-link to="/"><h3>Home</h3></router-link></a>
+            <a href="#contact"><h3>Contato</h3></a> 
+            <a href="#projects"><h3>Projetos</h3></a>
             
           </div>
         </nav>

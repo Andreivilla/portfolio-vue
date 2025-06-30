@@ -14,14 +14,10 @@
         </li>
       </ul>
 
-      <ul class="links-list">
-        <li>
-          <a :href="project.github" target="_blank" rel="noopener noreferrer" class="tag">GitHub</a>
-        </li>
-        <li>
-          <a :href="project.deploy" target="_blank" rel="noopener noreferrer" class="tag">Deploy</a>
-        </li>
-      </ul>
+      <div class="links-list">
+        <RectBtn href="https://github.com/Andreivilla">GitHub</RectBtn>
+        <RectBtn href="https://github.com/Andreivilla">Deploy</RectBtn>
+      </div>
 
     </div>
   </div>
@@ -29,6 +25,7 @@
 
 <script setup>
   import { defineProps, toRefs } from 'vue';
+  import RectBtn from '@/components/RectBtn.vue'
 
   const props = defineProps({
     project: {
@@ -59,6 +56,14 @@ function getIconUrl(name) {
     color: white;
   }
 
+  .links-list {
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    
+  }
+
   .tag {
     border-radius: 3px;
     padding: .2em .5em .3em;
@@ -69,17 +74,6 @@ function getIconUrl(name) {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500; 
     font-size: 14px;   
-  }
-
-  .tag-list .tag {
-    
-    background-color: #A798FF;
-  }
-
-  .links-list a {
-    text-decoration: none;
-    
-    background-color: #251D7A;
   }
 
   li {

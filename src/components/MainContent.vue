@@ -6,8 +6,8 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ad nemo in quis, maxime quae est fugiat unde cupiditate minus accusantium architecto repellat libero suscipit ducimus reprehenderit consequuntur blanditiis commodi.</p>
 
       <div class="social-wrapper">
-        <a class="btn" href="#contact">Contato</a>
-        <a class="btn" href="">Currículo</a>
+        <RectBtn href="#contact">Contato</RectBtn>
+        <RectBtn href="/curriculo.pdf" :blank="true">Currículo</RectBtn>
       </div>
 
     </aside>
@@ -21,6 +21,8 @@
 
 <script setup>
   //import PerfilCarousel from './PerfilCarousel.vue';
+  import RectBtn from '@/components/RectBtn.vue'
+
   
 </script>
 
@@ -31,29 +33,6 @@
     gap: 20px;
   }
   
-  .btn {
-    color: white;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: #2940D3;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    
-    transition: background-color 0.3s, color 0.3s;
-
-  }
-
-  .btn:hover {
-    background-color: #1e32a5;
-    color: white;
-    border-color: #1e32a5;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
-
   a {
     text-decoration: none;
   }

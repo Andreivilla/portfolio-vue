@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel-container">
+  <div class="carousel-container" id="projects">
     <h1>Projetos</h1>
 
     <ul class="carousel" ref="carousel">
@@ -10,14 +10,15 @@
     </ul>
 
     <div class="nav-buttons">
-      <button @click="prev">⮜</button>
-      <button @click="next">⮞</button>
+      <CircleBtn @click="prev">⮜</CircleBtn>
+      <CircleBtn @click="next">⮞</CircleBtn>
     </div>
   </div>
 </template>
 
 
 <script setup>
+import CircleBtn from '@/components/CircleBtn.vue'
 import { ref } from 'vue';
   import projects from '@/assets/projects.json'
   import ProjectCard from './ProjectCard.vue'
@@ -67,29 +68,11 @@ import { ref } from 'vue';
   }
 
   .nav-buttons {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
-  .nav-buttons button {
-    background-color: #2940D3;
-    color: white;
-    border: none;
-    padding: 0.75rem 1rem;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .nav-buttons button:hover {
-    background-color: #1e32a5;
-    color: white;
-    border-color: #1e32a5;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
 </style>
 
