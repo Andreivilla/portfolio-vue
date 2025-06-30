@@ -47,11 +47,10 @@
     align-items: center;
     width: 100%;
     height: 600px;
-    padding-top: 60px;
   }
 
   .title {
-    color: #A798FF;
+    color: var(--secondary-color);
   }
   
   aside, .perfil-img-container  {

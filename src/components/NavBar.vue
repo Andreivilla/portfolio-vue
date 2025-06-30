@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #251D7A;
+    background-color: var(--primary-color);
     height: 60px;
     border: 1px solid white;
     border-radius: 8px;
@@ -89,7 +89,7 @@
   }
 
   nav a:hover{
-    color: #A798FF;
+    color: gray;
   }
 
   nav .home-link{
@@ -110,7 +110,7 @@
   }
 
   svg:hover {
-    fill: #A798FF;
+    fill: gray;
   }
 
   @media(max-width: 768px){

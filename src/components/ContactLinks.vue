@@ -38,7 +38,9 @@
 </script>
 
 <style scoped>
+  
   @import url("@/assets/fonts/fonts.css");
+
   h1 {
     color: white;
     align-self: center;
@@ -99,13 +101,7 @@
     display: flex;
     gap: 28px;
   }
-  .link-item:hover {
-    background-color: #1e32a5;
-    color: white;
-    border-color: #1e32a5;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
+
   .link-item svg {
     height: 90%;
     width: 90%;

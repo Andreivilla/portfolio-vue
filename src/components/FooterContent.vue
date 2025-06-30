@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import ContactLinks from './ContactLinks.vue';
+  import ContactLinks from './ContactLinks.vue';
 
 </script>
 
@@ -23,7 +23,7 @@ import ContactLinks from './ContactLinks.vue';
   .footer-line {
     width: 100%;
     height: 1px;
-    background-color: #ccc;
+    background-color: white;
     margin: 2rem 0;
   }
 

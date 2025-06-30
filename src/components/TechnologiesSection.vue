@@ -28,7 +28,7 @@
 
 <style scoped>
   @import url("@/assets/fonts/fonts.css");
-  /*@import url("@/assets/fonts/Montserrat/stylesheet.css");*/
+  
   h1 {
     color: white;
   }
