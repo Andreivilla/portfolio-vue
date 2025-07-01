@@ -22,26 +22,40 @@
 </script>
 
 <style scoped>
-  .rect-btn {
-    color: white;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: var(--primary-color);
+.rect-btn {
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: var(--primary-gradient);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-  }
+.rect-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: left 0.4s ease;
+}
 
-  .rect-btn:hover {
-    background-color: var(--primary-shadow-color);
-    color: white;
-    border-color: var(--primary-shadow-color);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); 
-  }
+.rect-btn:hover::after {
+  left: 100%;
+}
+
+.rect-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px) scale(1.02);
+}
+
 </style>

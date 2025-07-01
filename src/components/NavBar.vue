@@ -18,7 +18,7 @@
             <a href=""><router-link to="/"><h3>Home</h3></router-link></a>
             <a href="#contact"><h3>Contato</h3></a> 
             <a href="#projects"><h3>Projetos</h3></a>
-            
+            <ThemeToggle/>
           </div>
         </nav>
       </div>
@@ -26,6 +26,7 @@
 </template>
 
 <script setup>
+import ThemeToggle from './ThemeToggle.vue';
 
 </script>
 
@@ -50,10 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    height: 60px;
-    border: 1px solid white;
-    border-radius: 8px;
+    background-color: var(--bg-main-color)
   }
 
   h1 {
@@ -61,10 +59,11 @@
     margin: 0;
   }
 
-  .title {
+  .title h1 {
     display: flex;
     gap: 0px;
     flex-direction: column;
+    color: var(--primary-color);
   }
   nav{
     height: 60px;
@@ -85,11 +84,11 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: var(--main-color);
   }
 
   nav a:hover{
-    color: gray;
+    color: var(--primary-color);
   }
 
   nav .home-link{
@@ -104,13 +103,13 @@
   }
 
   svg {
-    fill: white;
+    fill: var(--main-color);
     height: 48px;
     width: 48px;
   }
 
   svg:hover {
-    fill: gray;
+    fill: var(--primary-color);
   }
 
   @media(max-width: 768px){
@@ -126,7 +125,7 @@
       z-index: 10;
       width: 200px;
 
-      background-color: #251D7A;
+      background-color: black;
       transition: 0.75s ease-out;
     }
     nav a{

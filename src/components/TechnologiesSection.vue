@@ -27,10 +27,8 @@
 </script>
 
 <style scoped>
-  @import url("@/assets/fonts/fonts.css");
-  
   h1 {
-    color: white;
+    color: var(--main-color);
   }
 
   section {
@@ -42,15 +40,15 @@
   }
 
   .technologies-container {
-  margin: 28px;
-  display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha */
-  gap: 28px;
-  justify-content: center; /* Centraliza os cards */
-  color: white;
-  height: 100%;
-  width: 100%;
-}
+    margin: 28px;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 28px;
+    justify-content: center; /* Centraliza os cards */
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
 
   .card {
     display: flex;
@@ -73,6 +71,8 @@
   .card h1 {
     margin: 0;
     font-size: 16px;
+
+    color: var(--main-color);
   }  
   .vue {
     border-color: #3FB682;

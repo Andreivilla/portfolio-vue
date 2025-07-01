@@ -4,9 +4,13 @@
     
     <div class="project-content">
       <h2>{{ project.name }}</h2>
-      <ul class="tag-list">
-        <li v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</li>
-      </ul>
+      <div class="tag-list">
+        <TechnologiesTag
+          v-for="tag in project.tags"
+          :key="tag"
+          :text="tag"
+        />
+      </div>
       
       <ul v-if="project.technologies && project.technologies.length" class="tec-list">
         <li v-for="tec in project.technologies" :key="tec">
@@ -26,6 +30,7 @@
 <script setup>
   import { defineProps, toRefs } from 'vue';
   import RectBtn from '@/components/RectBtn.vue'
+  import TechnologiesTag from '@/components/TechnologiesTag.vue'
 
   const props = defineProps({
     project: {
@@ -34,19 +39,17 @@
     }
   });
   
-
   const { project } = toRefs(props);
 
-// Importa as imagens manualmente ou via require.context
-const requireIcon = require.context('@/assets/images/icons/techs', false, /\.(png|svg)$/)
+  const requireIcon = require.context('@/assets/images/icons/techs', false, /\.(png|svg)$/)
 
-function getIconUrl(name) {
-  try {
-    return requireIcon(`./${name}.png`)
-  } catch {
-    return '' // fallback caso não encontre
+  function getIconUrl(name) {
+    try {
+      return requireIcon(`./${name}.png`)
+    } catch {
+      return '' // fallback caso não encontre
+    }
   }
-}
 
 </script>
 
@@ -101,7 +104,7 @@ function getIconUrl(name) {
 
     flex: 0 0 300px;
     scroll-snap-align: center;
-    background: #222;
+    
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
@@ -122,7 +125,7 @@ function getIconUrl(name) {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #0B0E1E;
+    background: var(--gray-color);
     
     padding: 1rem;
     transform: translateY(70%);

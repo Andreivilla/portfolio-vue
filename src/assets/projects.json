@@ -1,7 +1,7 @@
 [
   {
     "name": "Dashboard interativa",
-    "tags": ["api externa", "front end responsivo", "websocket"],
+    "tags": ["API externa", "front end responsivo", "websocket"],
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/dashboard.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Gerenciador de Tarefas",
-    "tags": ["api externa", "front end responsivo"],
+    "tags": ["API externa", "front end responsivo"],
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/gerenciadordetarefas.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",

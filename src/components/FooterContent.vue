@@ -23,7 +23,7 @@
   .footer-line {
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: var(--main-color);
     margin: 2rem 0;
   }
 
