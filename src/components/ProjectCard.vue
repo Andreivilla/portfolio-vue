@@ -1,6 +1,11 @@
 <template>
   <div class="project-card-container">
     <img :src="project.image" :alt="project.name" class="project-image"/>
+    <div v-if="project.status === 'not-started' || project.status === 'in-progress'" class="status-overlay">
+      <span>
+        {{ project.status === 'not-started' ? 'Não iniciado' : 'Em progresso' }}
+      </span>
+    </div>
     
     <div class="project-content">
       <h2>{{ project.name }}</h2>
@@ -15,6 +20,8 @@
       <ul v-if="project.technologies && project.technologies.length" class="tec-list">
         <li v-for="tec in project.technologies" :key="tec">
           <img :src="getIconUrl(tec)" :alt="tec" class="tec-img" />
+
+
         </li>
       </ul>
 
@@ -140,7 +147,29 @@
   .project-content p {
     margin: 0;
     font-size: 0.9rem;
-    
   }
-  
+
+  .status-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 70, 70, 0.5); /* cinza transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    text-transform: uppercase;
+    pointer-events: none; /* permite clicar nos elementos abaixo */
+  }
+  span {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    font-weight: 600; 
+    font-size: 28px;
+  }  
 </style>

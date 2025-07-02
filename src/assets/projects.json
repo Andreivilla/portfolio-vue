@@ -5,7 +5,8 @@
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/dashboard.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app"
+    "deploy": "https://gerenciador-tarefas.netlify.app",
+    "status": "in-progress"
   },
   {
     "name": "Landing Page",
@@ -13,7 +14,8 @@
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/landingPage.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app"
+    "deploy": "https://gerenciador-tarefas.netlify.app",
+    "status": "complete"
   },
   {
     "name": "Gerenciador de Tarefas",
@@ -21,7 +23,8 @@
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/gerenciadordetarefas.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app"
+    "deploy": "https://gerenciador-tarefas.netlify.app",
+    "status": "not-started"
   },
   {
     "name": "Color theme",
@@ -29,7 +32,8 @@
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/colortheme.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app"
+    "deploy": "https://gerenciador-tarefas.netlify.app",
+    "status": "not-started"
   },
   {
     "name": "SPA Pomodoro",
@@ -37,6 +41,7 @@
     "technologies": ["NODEJS"],
     "image": "/projects/pomodoro.png",
     "github": "https://github.com/seuUsuario/api-filmes",
-    "deploy": "https://api-filmes.onrender.com"
+    "deploy": "https://api-filmes.onrender.com",
+    "status": "not-started"
   }
 ]

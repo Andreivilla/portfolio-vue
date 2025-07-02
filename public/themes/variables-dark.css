@@ -1,3 +1,4 @@
+@import url(@assets/fonts/fonts.css);
 :root {
   /*--bg-color: #111111;
   --text-color: #ffffff;*/
@@ -10,4 +11,5 @@
   --bottom-gradient: linear-gradient(45deg, #7D48F0 0%, #281453 10%, transparent 100%);
   --gray-color: #111111;
 
+  --primary-font-family: 'Montserrat', sans-serif;
 }
