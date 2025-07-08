@@ -7,7 +7,7 @@
 
       <div class="social-wrapper">
         <RectBtn href="#contact">Contato</RectBtn>
-        <RectBtn href="https://docs.google.com/document/d/1xH96qt0TFxZD-UwlSPib-9sW4lA93Z9D/edit?usp=sharing&ouid=107023122113010248322&rtpof=true&sd=true" :blank="true">Currículo</RectBtn>
+        <RectBtn href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" :blank="true">Currículo</RectBtn>
       </div>
 
     </aside>

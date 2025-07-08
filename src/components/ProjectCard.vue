@@ -26,8 +26,8 @@
       </ul>
 
       <div class="links-list">
-        <RectBtn href="https://github.com/Andreivilla">GitHub</RectBtn>
-        <RectBtn href="https://github.com/Andreivilla">Deploy</RectBtn>
+        <RectBtn :href="project.github">GitHub</RectBtn>
+        <RectBtn :href="project.deploy">Deploy</RectBtn>
       </div>
 
     </div>
@@ -120,6 +120,8 @@
   }
 
   .project-image{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 

@@ -19,10 +19,12 @@
     'JavaScript': 'bg-yellow',
     'Vue': 'bg-green',
     'HTML': 'bg-orange',
-    'CSS': 'bg-blue',
+    'Design Responsivo': 'bg-orange',
+    'Temas': 'bg-blue',
     'API externa': 'bg-purple',
     'Machine Learning': 'bg-pink'
   }
+
 
   // Normaliza o texto antes de buscar a cor
   const normalizedText = computed(() => props.text.trim())

@@ -1,12 +1,12 @@
 [
   {
     "name": "Dashboard interativa",
-    "tags": ["API externa", "front end responsivo", "websocket"],
+    "tags": ["API externa", "Design Responsivo", "Temas"],
     "technologies": ["HTML", "CSS", "JS", "VUE"],
     "image": "/projects/dashboard.png",
-    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app",
-    "status": "in-progress"
+    "github": "https://github.com/Andreivilla/dashboard-vue",
+    "deploy": "https://andreivilla.github.io/dashboard-vue/",
+    "status": "complete"
   },
   {
     "name": "Landing Page",
@@ -15,7 +15,7 @@
     "image": "/projects/landingPage.png",
     "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
     "deploy": "https://gerenciador-tarefas.netlify.app",
-    "status": "complete"
+    "status": "not-started"
   },
   {
     "name": "Gerenciador de Tarefas",
