@@ -37,6 +37,7 @@
     align-items: center;
     flex-direction: column;
     display: flex;
+    background: var(--bottom-gradient);
   }
 
   .technologies-container {

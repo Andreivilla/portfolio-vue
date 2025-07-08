@@ -125,7 +125,7 @@ import ThemeToggle from './ThemeToggle.vue';
       z-index: 10;
       width: 200px;
 
-      background-color: black;
+      background-color: var(--bg-main-color);
       transition: 0.75s ease-out;
     }
     nav a{

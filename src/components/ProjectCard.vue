@@ -27,7 +27,7 @@
 
       <div class="links-list">
         <RectBtn :href="project.github">GitHub</RectBtn>
-        <RectBtn :href="project.deploy">Deploy</RectBtn>
+        <RectBtn :href="project.deploy">Ver projeto</RectBtn>
       </div>
 
     </div>

@@ -34,6 +34,9 @@
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+
+  align-content: center;
+  justify-content: center;
 }
 
 .rect-btn::after {
