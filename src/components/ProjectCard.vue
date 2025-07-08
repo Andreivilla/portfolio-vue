@@ -1,6 +1,6 @@
 <template>
   <div class="project-card-container">
-    <img :src="project.image" :alt="project.name" class="project-image"/>
+    <img :src="baseUrl + project.image" :alt="project.name" class="project-image" />
     <div v-if="project.status === 'not-started' || project.status === 'in-progress'" class="status-overlay">
       <span>
         {{ project.status === 'not-started' ? 'Não iniciado' : 'Em progresso' }}
@@ -39,6 +39,8 @@
   import RectBtn from '@/components/RectBtn.vue'
   import TechnologiesTag from '@/components/TechnologiesTag.vue'
 
+  const baseUrl = process.env.BASE_URL;
+  
   const props = defineProps({
     project: {
       type: Object,
