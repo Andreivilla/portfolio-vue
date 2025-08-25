@@ -56,7 +56,7 @@
     try {
       return requireIcon(`./${name}.png`)
     } catch {
-      return '' // fallback caso não encontre
+      return '' 
     }
   }
 

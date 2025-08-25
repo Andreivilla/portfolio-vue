@@ -17,10 +17,12 @@
   // Mapa de cores incluindo palavras compostas
   const colorMap = {
     'JavaScript': 'bg-yellow',
-    'Vue': 'bg-green',
+    'Vuex': 'bg-green',
+    'Vue Router': 'bg-vue-router',
     'HTML': 'bg-orange',
     'Design Responsivo': 'bg-orange',
     'Temas': 'bg-blue',
+    'Bootstrap': 'bg-blue',
     'API externa': 'bg-purple',
     'Machine Learning': 'bg-pink'
   }
@@ -51,4 +53,5 @@
   .bg-purple { background-color: #8e44ad; }
   .bg-pink { background-color: #e91e63; }
   .bg-gray { background-color: #777; }
+  .bg-vue-router { background-color: #35495E; }
 </style>
