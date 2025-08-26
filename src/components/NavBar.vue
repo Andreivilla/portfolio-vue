@@ -31,7 +31,7 @@ import ThemeToggle from './ThemeToggle.vue';
 </script>
 
 <style scoped>
-  @import url("@/assets/fonts/fonts.css");
+  @import url("../assets/fonts/fonts.css");
 
   header {
     position: fixed;

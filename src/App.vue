@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  @import url("@/assets/fonts/fonts.css");
+  @import url("./assets/fonts/fonts.css");
   body {
     /*background-color: #0C122F;*/
     background-color: var(--bg-main-color);

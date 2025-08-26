@@ -36,8 +36,8 @@
 
 <script setup>
   import { defineProps, toRefs } from 'vue';
-  import RectBtn from '@/components/RectBtn.vue'
-  import TechnologiesTag from '@/components/TechnologiesTag.vue'
+  import RectBtn from './RectBtn.vue'
+  import TechnologiesTag from './TechnologiesTag.vue'
 
   const baseUrl = process.env.BASE_URL;
   
@@ -50,7 +50,7 @@
   
   const { project } = toRefs(props);
 
-  const requireIcon = require.context('@/assets/images/icons/techs', false, /\.(png|svg)$/)
+  const requireIcon = require.context('../assets/images/icons/techs', false, /\.(png|svg)$/)
 
   function getIconUrl(name) {
     try {

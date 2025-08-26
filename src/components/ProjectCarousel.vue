@@ -27,9 +27,9 @@
 
 
 <script setup>
-import CircleBtn from '@/components/CircleBtn.vue'
+import CircleBtn from '../components/CircleBtn.vue'
 import { ref } from 'vue';
-  import projects from '@/assets/projects.json'
+  import projects from '../assets/projects.json'
   import ProjectCard from './ProjectCard.vue'
 
   const carousel = ref(null);

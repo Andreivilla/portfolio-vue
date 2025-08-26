@@ -3,19 +3,19 @@
     <h1>Tecnologias</h1>
     <div class="technologies-container">
       <div class="card vue">
-        <img src="@/assets/images/icons/techs/VUE.png" alt="VUE-logo">
+        <img src="../assets/images/icons/techs/VUE.png" alt="VUE-logo">
         <h1>Vue</h1>
       </div>
       <div class="card html">
-        <img src="@/assets/images/icons/techs/HTML.png" alt="HTML-logo">
+        <img src="../assets/images/icons/techs/HTML.png" alt="HTML-logo">
         <h1>HTML</h1>
       </div>
       <div class="card css">
-        <img src="@/assets/images/icons/techs/CSS.png" alt="CSS-logo">
+        <img src="../assets/images/icons/techs/CSS.png" alt="CSS-logo">
         <h1>CSS</h1>
       </div>
       <div class="card js">
-        <img src="@/assets/images/icons/techs/JS.png" alt="JS-logo">
+        <img src="../assets/images/icons/techs/JS.png" alt="JS-logo">
         <h1>JS</h1>
       </div>
     </div>

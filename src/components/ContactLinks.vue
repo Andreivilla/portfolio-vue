@@ -33,13 +33,13 @@
 </template>
 
 <script setup>
-  import CircleBtn from '@/components/CircleBtn.vue'
+  import CircleBtn from './CircleBtn.vue'
 
 </script>
 
 <style scoped>
   
-  @import url("@/assets/fonts/fonts.css");
+  @import url("../assets/fonts/fonts.css");
 
   h1 {
     color: var(--main-color);

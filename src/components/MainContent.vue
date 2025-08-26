@@ -26,7 +26,7 @@
     </aside>
     
     <div class="perfil-img-container">
-      <img src="@/assets/images/perfil/perfil-pixel.gif" alt="">
+      <img src="../assets/images/perfil/perfil-pixel.gif" alt="">
     </div>
   </main>
 
@@ -34,7 +34,7 @@
 
 <script setup>
   //import PerfilCarousel from './PerfilCarousel.vue';
-  import RectBtn from '@/components/RectBtn.vue'
+  import RectBtn from './RectBtn.vue'
   import CircleBtn from './CircleBtn.vue';
 
   
