@@ -1,14 +1,14 @@
 <template>
-  <main>
-    <div class="flex flex-col items-center m-4 font-bold">
+  <main class="p-4 min-h-screen text-white
+    bg-gradient-to-br from-[#1A0033] via-[#330066] to-[#4D0099]">
+    <div class="flex flex-col items-center font-bold">
       <h1 class="title font-montserrat"><span>Andrei Villa</span></h1>
       <h2 class="">Desenvolvedor Full-Stack</h2>
       <p class="text-center">Formado em Ciência da Computação pela UDESC, estou em transição para me consolidar como desenvolvedor web full stack. 
       Com experiência em projetos que envolvem Vue.js, Node.js, bancos de dados e integrações com APIs, busco criar soluções 
       eficientes e centradas no usuário.</p>
-
     </div>
-    <div class="flex flex-col items-center">
+    <div class="mt-2 flex flex-col items-center">
       <div class="flex gap-4">
         <a href="https://www.linkedin.com/in/andrei-villa-7729801b6/" target="_blank"
           class="middle none center rounded-lg 
@@ -17,7 +17,7 @@
           transition-all hover:shadow-lg hover:shadow-blue-500/40 
           focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] 
           active:shadow-none disabled:pointer-events-none disabled:opacity-50 
-          disabled:shadow-none h-full w-full flex">
+          disabled:shadow-none flex">
           <svg xmlns="http://www.w3.org/2000/svg" 
             fill="currentColor" 
             width="16" height="16" 
@@ -35,7 +35,7 @@
             transition-all hover:shadow-lg hover:shadow-blue-500/40 
             focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] 
             active:shadow-none disabled:pointer-events-none disabled:opacity-50 
-            disabled:shadow-none h-full w-full flex">
+            disabled:shadow-none flex">
           <svg xmlns="http://www.w3.org/2000/svg" 
             fill="currentColor" 
             width="16" height="16" 

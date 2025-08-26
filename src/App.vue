@@ -1,24 +1,28 @@
-<template>
+<template >
+  
   <NavBar></NavBar>
   <MainContent></MainContent>
   <TechnologiesSection></TechnologiesSection>
-  <ProjectCarousel></ProjectCarousel>
-  <FooterContent></FooterContent>
   
+  <!--<ProjectCarousel></ProjectCarousel>
+  <FooterContent></FooterContent>-->
   
 </template>
 
 <script setup>
   import NavBar from "./components/NavBar.vue";
   import MainContent from "./components/MainContent.vue"; 
-  import ProjectCarousel from "./components/ProjectCarousel.vue";
+  //import ProjectCarousel from "./components/ProjectCarousel.vue";
   import TechnologiesSection from "./components/TechnologiesSection.vue";
-  import FooterContent from "./components/FooterContent.vue";
+  //import FooterContent from "./components/FooterContent.vue";
 
 
 </script>
 
 <style>
+  body{
+    background: linear-gradient(to bottom right, #1A0033, #330066, #4D0099);
+  }
   /*@import url("./assets/fonts/fonts.css");
   body {
     
