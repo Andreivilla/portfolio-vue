@@ -1,4 +1,34 @@
 <template>
+  <header class="lg:px-16 px-4 bg-black flex flex-wrap items-center shadow-md z-50">
+    <div class="flex-1 flex justify-between items-center">
+        <router-link to="/" class="font-logo text-4xl font-bold text-white">Andrei Villa</router-link>
+    </div>
+      <HamburgerMenu 
+        class="md:hidden block"
+        @changeMenu="changeMenu"
+      /> 
+
+    <div :class="menuOpen ? 'block' : 'hidden'" class="md:flex md:items-center md:w-auto w-full">
+        <nav>
+            <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                <li><router-link to="/MafiaI" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
+                    Home
+                  </router-link>
+                </li>
+                <li><router-link to="/MafiaII" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
+                    Contato
+                  </router-link>
+                </li>
+                <li><router-link to="/MafiaIII" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
+                    Projetos
+                  </router-link>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+<!--
   <header>
     <div class="nav-container">
       <div class="title">
@@ -23,137 +53,18 @@
         </nav>
       </div>
   </header>
+-->
 </template>
 
 <script setup>
-import ThemeToggle from './ThemeToggle.vue';
+  import { ref } from 'vue';
+  import HamburgerMenu from './HamburgerMenu.vue';
+
+  const menuOpen = ref(false);
+
+  function changeMenu(){
+    menuOpen.value = !menuOpen.value;
+  }
 
 </script>
 
-<style scoped>
-  @import url("../assets/fonts/fonts.css");
-
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    
-    z-index: 1000; /* pra ficar acima de tudo */    
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 12px 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg-main-color)
-  }
-
-  h1 {
-    color: white;
-    margin: 0;
-  }
-
-  .title h1 {
-    display: flex;
-    gap: 0px;
-    flex-direction: column;
-    color: var(--primary-color);
-  }
-  nav{
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .links-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-  }
-  nav a{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--main-color);
-  }
-
-  nav a:hover{
-    color: var(--primary-color);
-  }
-
-  nav .home-link{
-    margin-right: auto;
-  }
-
-  #sidebar-active{
-    display: none;
-  }
-  .open-sidebar-button, .close-sidebar-button{
-    display: none;
-  }
-
-  svg {
-    fill: var(--main-color);
-    height: 48px;
-    width: 48px;
-  }
-
-  svg:hover {
-    fill: var(--primary-color);
-  }
-
-  @media(max-width: 768px){
-  
-
-    .links-container{
-      flex-direction: column;
-      align-items: flex-start;
-
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 10;
-      width: 200px;
-
-      background-color: var(--bg-main-color);
-      transition: 0.75s ease-out;
-    }
-    nav a{
-      box-sizing: border-box;
-      height: auto;
-      width: 100%;
-      padding: 4px 20px;
-      justify-content: flex-start;
-    }
-    nav img {
-      filter: invert(100%);
-      height: 32px;
-      width: 32px;
-    }
-    .open-sidebar-button, .close-sidebar-button{
-      padding: 20px;
-      display: block;
-    }
-    #sidebar-active:checked ~ .links-container{
-      right: 0;
-    }
-    #sidebar-active:checked ~ #overlay{
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9;
-    }
-  }
-</style>
