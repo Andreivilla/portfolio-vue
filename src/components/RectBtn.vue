@@ -1,7 +1,7 @@
 <template>
   <a
     :href="href"
-    class="rect-btn"
+    class=""
     :target="blank ? '_blank' : '_self'"
   >
     <slot />
@@ -21,6 +21,7 @@
   })
 </script>
 
+<!--
 <style scoped>
 .rect-btn {
   color: white;
@@ -61,4 +62,4 @@
   transform: translateY(-3px) scale(1.02);
 }
 
-</style>
+</style>-->

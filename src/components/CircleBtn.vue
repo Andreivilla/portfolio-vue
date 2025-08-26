@@ -21,7 +21,7 @@ defineProps({
   },
 })
 </script>
-
+<!--
 <style scoped>
   .circle-btn {
     background: var(--primary-gradient);
@@ -64,3 +64,4 @@ defineProps({
     box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.25);
   }
 </style>
+-->
