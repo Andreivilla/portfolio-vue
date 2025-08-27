@@ -10,15 +10,15 @@
 
     <div :class="menuOpen ? 'block' : 'hidden'" class="md:flex md:items-center md:w-auto w-full">
         <nav>
-            <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+            <ul class="md:flex items-center justify-between text-base pt-4 md:pt-0">
                 <li>
-                  <a href="#main-content" class="text-xl text-white md:mr-4">Home</a>
+                  <a href="#main-content" class="text-xl text-white hover:text-primary md:mr-4">Home</a>
                 </li>
                 <li>
-                  <a href="#contact-links" class="text-xl text-white md:mr-4">Contato</a>
+                  <a href="#contact-links" class="text-xl text-white hover:text-primary md:mr-4">Contato</a>
                 </li>
                 <li>
-                  <a href="#projects" class="text-xl text-white ">Projetos</a>
+                  <a href="#projects" class="text-xl text-white hover:text-primary">Projetos</a>
                 </li>
             </ul>
         </nav>

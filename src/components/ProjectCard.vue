@@ -2,9 +2,10 @@
   <div
     class="group relative flex flex-col w-screen h-screen md:h-[400px] md:w-[400px] flex-shrink-0 snap-center rounded-2xl overflow-hidden"
   > 
-    <!-- imagem :src="baseUrl + project.image"-->
+    <!-- imagem :src="baseUrl + project.image"
+    :src="project.image"-->
     <img
-      :src="project.image"
+      :src="baseUrl + project.image"
       :alt="project.name"
       class="w-full h-full object-cover"
     />
@@ -49,22 +50,22 @@
       <!-- links -->
       <div class="flex w-full gap-2 mt-2">
         <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
-        class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
-          font-sans text-xs font-bold uppercase text-white shadow-md 
-          shadow-blue-500/20 transition-all hover:shadow-lg 
-          hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
-          active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
-          disabled:opacity-50 disabled:shadow-none m-2"
+            class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
+                  font-sans text-xs font-bold uppercase text-white shadow-md 
+                  transition-all hover:shadow-primary/20 
+                  focus:opacity-[0.85] focus:shadow-none 
+                  active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
+                  disabled:opacity-50 disabled:shadow-none w-fit"
         :blank="true"
         :href="project.github">GitHub</a>
 
         <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
-        class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
-          font-sans text-xs font-bold uppercase text-white shadow-md 
-          shadow-blue-500/20 transition-all hover:shadow-lg 
-          hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
-          active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
-          disabled:opacity-50 disabled:shadow-none m-2"
+            class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
+                  font-sans text-xs font-bold uppercase text-white shadow-md 
+                  transition-all hover:shadow-primary/20 
+                  focus:opacity-[0.85] focus:shadow-none 
+                  active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
+                  disabled:opacity-50 disabled:shadow-none w-fit"
         :blank="true"
         :href="project.deploy">Ver projeto</a>
       </div>
