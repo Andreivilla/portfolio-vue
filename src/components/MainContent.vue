@@ -2,8 +2,8 @@
   <main class="p-4 min-h-screen text-white
     bg-gradient-to-br from-[#1A0033] via-[#330066] to-[#4D0099]">
     <div class="flex flex-col items-center font-bold">
-      <h1 class="title font-montserrat"><span>Andrei Villa</span></h1>
-      <h2 class="">Desenvolvedor Full-Stack</h2>
+      <!--<h1 class="title font-montserrat"><span>Andrei Villa</span></h1>-->
+      <h2 class="text-2xl text-primary">Desenvolvedor Full-Stack</h2>
       <p class="text-center">Formado em Ciência da Computação pela UDESC, estou em transição para me consolidar como desenvolvedor web full stack. 
       Com experiência em projetos que envolvem Vue.js, Node.js, bancos de dados e integrações com APIs, busco criar soluções 
       eficientes e centradas no usuário.</p>
@@ -12,7 +12,7 @@
       <div class="flex gap-4">
         <a href="https://www.linkedin.com/in/andrei-villa-7729801b6/" target="_blank"
           class="middle none center rounded-lg 
-          bg-blue-500 py-3 px-6 font-sans text-xs font-bold 
+          bg-primary py-3 px-6 font-sans text-xs font-bold 
           uppercase text-white shadow-md shadow-blue-500/20 
           transition-all hover:shadow-lg hover:shadow-blue-500/40 
           focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] 
@@ -30,7 +30,7 @@
         
         <a href="https://www.linkedin.com/in/andrei-villa-7729801b6/" target="_blank"
           class="middle none center rounded-lg 
-            bg-blue-500 py-3 px-6 font-sans text-xs font-bold 
+            bg-primary py-3 px-6 font-sans text-xs font-bold 
             uppercase text-white shadow-md shadow-blue-500/20 
             transition-all hover:shadow-lg hover:shadow-blue-500/40 
             focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] 
@@ -48,7 +48,7 @@
       </div>
       <a 
         href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
-        class="middle none center mr-4 rounded-lg bg-blue-500 py-3 px-6 
+        class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
           font-sans text-xs font-bold uppercase text-white shadow-md 
           shadow-blue-500/20 transition-all hover:shadow-lg 
           hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 

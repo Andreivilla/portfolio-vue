@@ -3,8 +3,8 @@
   <NavBar/>
   <MainContent/>
   <TechnologiesSection/>
-  
-  <!--<ProjectCarousel></ProjectCarousel>
+  <ProjectCarousel/>
+  <!--
   <FooterContent></FooterContent>-->
   
 </template>
@@ -12,7 +12,7 @@
 <script setup>
   import NavBar from "./components/NavBar.vue";
   import MainContent from "./components/MainContent.vue"; 
-  //import ProjectCarousel from "./components/ProjectCarousel.vue";
+  import ProjectCarousel from "./components/ProjectCarousel.vue";
   import TechnologiesSection from "./components/TechnologiesSection.vue";
   //import FooterContent from "./components/FooterContent.vue";
 

@@ -1,179 +1,101 @@
 <template>
-  <div class="project-card-container">
-    <img :src="baseUrl + project.image" :alt="project.name" class="project-image" />
-    <div v-if="project.status === 'not-started' || project.status === 'in-progress'" class="status-overlay">
-      <span>
+  <div
+    class="group relative flex flex-col w-screen h-screen md:h-[400px] md:w-[400px] flex-shrink-0 snap-center rounded-2xl overflow-hidden"
+  > 
+    <!-- imagem :src="baseUrl + project.image"-->
+    <img
+      :src="project.image"
+      :alt="project.name"
+      class="w-full h-full object-cover"
+    />
+
+    <!-- overlay de status -->
+    <div
+      v-if="project.status === 'not-started' || project.status === 'in-progress'"
+      class="absolute inset-0 bg-[rgba(70,70,70,0.5)] flex items-center justify-center text-xl font-bold uppercase z-10 pointer-events-none"
+    >
+      <span class="text-[28px] font-semibold text-primary">
         {{ project.status === 'not-started' ? 'Não iniciado' : 'Em progresso' }}
       </span>
     </div>
-    
-    <div class="project-content">
-      <h2>{{ project.name }}</h2>
-      <div class="tag-list">
+
+    <!-- conteúdo -->
+    <div class="absolute bottom-0 left-0 w-full p-4 transform translate-y-0 
+    md:translate-y-[70%] transition-transform duration-400 ease-in-out 
+    md:group-hover:translate-y-0
+    bg-[radial-gradient(circle_at_top_left,#4a0080,#1a0033)]">
+
+      <h2 class="mb-2 text-lg font-semibold">{{ project.name }}</h2>
+
+      <!-- tags -->
+      <div class="flex flex-wrap gap-1">
         <TechnologiesTag
           v-for="tag in project.tags"
           :key="tag"
           :text="tag"
         />
       </div>
-      
-      <ul v-if="project.technologies && project.technologies.length" class="tec-list">
-        <li v-for="tec in project.technologies" :key="tec">
-          <img :src="getIconUrl(tec)" :alt="tec" class="tec-img" />
 
-
+      <!-- tecnologias -->
+      <ul
+        v-if="project.technologies && project.technologies.length"
+        class="flex flex-wrap gap-1 mt-3"
+      >
+        <li v-for="tec in project.technologies" :key="tec" class="list-none">
+          <img :src="getIconUrl(tec)" :alt="tec" class="w-6 h-6" />
         </li>
       </ul>
 
-      <div class="links-list">
-        <RectBtn :href="project.github">GitHub</RectBtn>
-        <RectBtn :href="project.deploy">Ver projeto</RectBtn>
-      </div>
+      <!-- links -->
+      <div class="flex w-full gap-2 mt-2">
+        <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
+        class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
+          font-sans text-xs font-bold uppercase text-white shadow-md 
+          shadow-blue-500/20 transition-all hover:shadow-lg 
+          hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
+          active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
+          disabled:opacity-50 disabled:shadow-none m-2"
+        :blank="true"
+        :href="project.github">GitHub</a>
 
+        <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
+        class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
+          font-sans text-xs font-bold uppercase text-white shadow-md 
+          shadow-blue-500/20 transition-all hover:shadow-lg 
+          hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
+          active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
+          disabled:opacity-50 disabled:shadow-none m-2"
+        :blank="true"
+        :href="project.deploy">Ver projeto</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-  import { defineProps, toRefs } from 'vue';
-  import RectBtn from './RectBtn.vue'
-  import TechnologiesTag from './TechnologiesTag.vue'
+import { defineProps, toRefs } from 'vue'
+import TechnologiesTag from './TechnologiesTag.vue'
 
-  const baseUrl = process.env.BASE_URL;
-  
-  const props = defineProps({
-    project: {
-      type: Object,
-      required: true
-    }
-  });
-  
-  const { project } = toRefs(props);
+// ✅ no Vite é assim
+const baseUrl = import.meta.env.BASE_URL
 
-  const requireIcon = require.context('../assets/images/icons/techs', false, /\.(png|svg)$/)
 
-  function getIconUrl(name) {
-    try {
-      return requireIcon(`./${name}.png`)
-    } catch {
-      return '' 
-    }
-  }
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true,
+  },
+})
 
+const { project } = toRefs(props)
+
+// ✅ substitui require.context pelo import.meta.glob
+const icons = import.meta.glob('../assets/images/icons/techs/*', { eager: true })
+
+function getIconUrl(name) {
+  const file = Object.keys(icons).find((path) =>
+    path.endsWith(`${name}.png`)
+  )
+  return file ? icons[file].default : ''
+}
 </script>
-
-
-<style scoped>
-  * {
-    color: white;
-  }
-
-  .links-list {
-    width: 100%;
-    display: flex;
-    margin-top: 8px;
-    gap: 8px;
-    
-  }
-
-  .tag {
-    border-radius: 3px;
-    padding: .2em .5em .3em;
-    border-radius: 12px;
-    font-weight: 600;
-    margin: .25em .1em;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500; 
-    font-size: 14px;   
-  }
-
-  li {
-    list-style: none;
-  }
-
-  ul {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    scrollbar-width: none;
-
-    margin-top: 12px;
-  }
-
-  .tec-img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .project-card-container {
-    height: 400px;
-    width: 400px;
-
-    flex: 0 0 300px;
-    scroll-snap-align: center;
-    
-    border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .project-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .project-card-container:hover .project-content {
-    transform: translateY(0%);
-  }
-
-  .project-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: var(--gray-color);
-    
-    padding: 1rem;
-    transform: translateY(70%);
-    transition: transform 0.4s ease;
-  }
-
-  .project-content h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.2rem;
-  }
-
-  .project-content p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-
-  .status-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(70, 70, 70, 0.5); /* cinza transparente */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    z-index: 1;
-    text-transform: uppercase;
-    pointer-events: none; /* permite clicar nos elementos abaixo */
-  }
-  span {
-    font-family: var(--primary-font-family);
-    color: var(--primary-color);
-    font-weight: 600; 
-    font-size: 28px;
-  }  
-</style>
