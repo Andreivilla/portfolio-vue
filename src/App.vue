@@ -1,8 +1,8 @@
 <template >
   
-  <NavBar></NavBar>
-  <MainContent></MainContent>
-  <TechnologiesSection></TechnologiesSection>
+  <NavBar/>
+  <MainContent/>
+  <TechnologiesSection/>
   
   <!--<ProjectCarousel></ProjectCarousel>
   <FooterContent></FooterContent>-->
