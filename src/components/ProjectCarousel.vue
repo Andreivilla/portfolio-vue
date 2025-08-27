@@ -1,10 +1,10 @@
 <template>
-  <div id="projects" class="text-white my-7 px-0 p-2 md:px-7">
+  <div id="projects" class="text-white my-7 px-0 p-2 mx-4">
     <h1 class="text-center mb-4 text-2xl font-bold">Projetos</h1>
 
     <ul
-      class="flex gap-0 overflow-x-auto scroll-smooth snap-x snap-mandatory 
-      no-scrollbar md:gap-4"
+      class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory 
+      no-scrollbar"
       ref="carousel"
     >
       <li

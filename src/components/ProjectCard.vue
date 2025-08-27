@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative flex flex-col w-screen h-screen md:h-[400px] md:w-[400px] flex-shrink-0 snap-center rounded-2xl overflow-hidden"
+    class="group relative flex flex-col h-[400px] w-[400px] flex-shrink-0 snap-center rounded-2xl overflow-hidden"
   > 
     <!-- imagem :src="baseUrl + project.image"
     :src="project.image"-->
@@ -21,9 +21,9 @@
     </div>
 
     <!-- conteúdo -->
-    <div class="absolute bottom-0 left-0 w-full p-4 transform translate-y-0 
-    md:translate-y-[70%] transition-transform duration-400 ease-in-out 
-    md:group-hover:translate-y-0
+    <div class="absolute bottom-0 left-0 w-full p-4 transform 
+    translate-y-[70%] transition-transform duration-400 ease-in-out 
+    group-hover:translate-y-0
     bg-[radial-gradient(circle_at_top_left,#4a0080,#1a0033)]">
 
       <h2 class="mb-2 text-lg font-semibold">{{ project.name }}</h2>
