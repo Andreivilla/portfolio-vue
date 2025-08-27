@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-7 flex flex-col justify-center items-center pt-4 text-white">
+  <footer id="contact-links" class="mt-7 flex flex-col justify-center items-center pt-4 text-white">
     <div class="w-full h-px bg-gradient-to-r from-[#9333ea] via-white to-[#9333ea] my-8"></div>
     
     <section id="contact" class="w-full flex flex-col items-center gap-4 py-8">
@@ -22,13 +22,12 @@
         <div class="flex gap-6 justify-center">
           <!-- LinkedIn -->
           <a
-            class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
+            class="flex items-center gap-2 mr-4 rounded-lg bg-primary py-3 px-6 
               font-sans text-xs font-bold uppercase text-white shadow-md 
-              shadow-blue-500/20 transition-all hover:shadow-lg 
-              hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
+              transition-all hover:shadow-primary/20 
+              focus:opacity-[0.85] focus:shadow-none 
               active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
               disabled:opacity-50 disabled:shadow-none m-2"
-            :blank="true"
             href="https://www.linkedin.com/in/andrei-villa-7729801b6/"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,10 +40,10 @@
 
           <!-- WhatsApp -->
           <a
-            class="middle none center mr-4 rounded-lg bg-primary py-3 px-6 
+            class="flex items-center gap-2 mr-4 rounded-lg bg-primary py-3 px-6 
               font-sans text-xs font-bold uppercase text-white shadow-md 
-              shadow-blue-500/20 transition-all hover:shadow-lg 
-              hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none 
+              transition-all hover:shadow-primary/20 
+              focus:opacity-[0.85] focus:shadow-none 
               active:opacity-[0.85] active:shadow-none disabled:pointer-events-none 
               disabled:opacity-50 disabled:shadow-none m-2"
             href="https://wa.me/qr/CCL6LDE42Z4UC1"

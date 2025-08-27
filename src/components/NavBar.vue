@@ -1,7 +1,7 @@
 <template>
-  <header class="lg:px-16 px-4 flex flex-wrap items-center shadow-md z-50">
+  <header class="sticky top-0 shadow-md z-50 bg-[#1A0033] max-w-screen-2xl mx-auto lg:px-16 px-4 flex flex-wrap items-center">
     <div class="flex-1 flex justify-between items-center">
-        <router-link to="/" class="font-logo text-4xl font-bold text-white">Andrei Villa</router-link>
+        <a href="#main-content" class="font-logo text-4xl font-bold text-white my-2">Andrei Villa</a>
     </div>
       <HamburgerMenu 
         class="md:hidden block"
@@ -12,22 +12,13 @@
         <nav>
             <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                 <li>
-                  <a href="">Home</a>
-                <!--<router-link to="/MafiaI" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
-                    Home<span class="text-primary-red text-2xl">I</span>
-                  </router-link>-->
+                  <a href="#main-content" class="text-xl text-white md:mr-4">Home</a>
                 </li>
                 <li>
-                <!--<router-link to="/MafiaII" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
-                    Contato
-                  </router-link>-->
-                  <a href="">Contato</a>
+                  <a href="#contact-links" class="text-xl text-white md:mr-4">Contato</a>
                 </li>
                 <li>
-                <!--<router-link to="/MafiaIII" class="font-logo md:p-4 py-3 px-0 block text-white hover:text-primary-red text-2xl">
-                    Projetos
-                  </router-link>-->
-                  <a href="">Projetos</a>
+                  <a href="#projects" class="text-xl text-white ">Projetos</a>
                 </li>
             </ul>
         </nav>

@@ -1,34 +1,23 @@
-<template >
-  
-  <NavBar/>
-  <MainContent/>
-  <TechnologiesSection/>
-  <ProjectCarousel/>
-  <FooterContent/>
-  
+<template>
+  <div class="bg-gradient-to-br from-[#1A0033] via-[#330066] to-[#4D0099] max-w-screen-2xl mx-auto min-h-screen">
+    <NavBar/>
+    <MainContent/>
+    <TechnologiesSection/>
+    <ProjectCarousel/>
+    <FooterContent/>
+  </div>
 </template>
 
 <script setup>
-  import NavBar from "./components/NavBar.vue";
-  import MainContent from "./components/MainContent.vue"; 
-  import ProjectCarousel from "./components/ProjectCarousel.vue";
-  import TechnologiesSection from "./components/TechnologiesSection.vue";
-  import FooterContent from "./components/FooterContent.vue";
-
-
+import NavBar from "./components/NavBar.vue";
+import MainContent from "./components/MainContent.vue"; 
+import ProjectCarousel from "./components/ProjectCarousel.vue";
+import TechnologiesSection from "./components/TechnologiesSection.vue";
+import FooterContent from "./components/FooterContent.vue";
 </script>
 
 <style>
-  body{
-    background: linear-gradient(to bottom right, #1A0033, #330066, #4D0099);
-  }
-  /*@import url("./assets/fonts/fonts.css");
-  body {
-    
-    background-color: var(--bg-main-color);
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-top: 86px;
-  }*/
-
+body {
+  background: black; /* laterais pretas */
+}
 </style>
