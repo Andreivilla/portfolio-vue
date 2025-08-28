@@ -66,9 +66,7 @@
 </template>
 
 <script setup>
-  //import PerfilCarousel from './PerfilCarousel.vue';
-  import RectBtn from './RectBtn.vue'
-  import CircleBtn from './CircleBtn.vue';
+
 
   
 </script>

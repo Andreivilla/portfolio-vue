@@ -1,8 +1,8 @@
 [
   {
     "name": "Catálogo de produtos",
-    "tags": ["Vue Router", "Vuex", "API externa", "Bootstrap"],
-    "technologies": ["VUE", "VUEX", "HTML", "CSS", "JS"],
+    "tags": ["Vue Router", "Pinia", "API externa", "Bootstrap"],
+    "technologies": ["VUE", "PINIA", "HTML", "CSS", "JS"],
     "image": "/projects/Store.png",
     "github": "https://github.com/Andreivilla/product-catalog",
     "deploy": "https://andreivilla.github.io/product-catalog/",

@@ -1,5 +1,5 @@
 <template>
-  <div id="projects" class="text-white my-7 px-0 p-2 mx-4">
+  <div id="projects" class="text-white mt-2 px-0 p-2 mx-4">
     <h1 class="text-center mb-4 text-2xl font-bold">Projetos</h1>
 
     <ul
@@ -17,10 +17,12 @@
     </ul>
 
     <div class="flex justify-center gap-4 mt-8">
-      <button @click="prev" class="fill-primary">
+      <button @click="prev" 
+        class="fill-primary cursor-pointer"
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
+          class="w-10 h-10"
           viewBox="0 0 16 16"
         >
           <path
@@ -30,10 +32,11 @@
         </svg>
       </button>
 
-      <button @click="next" class="fill-primary">
+      <button @click="next" 
+        class="fill-primary cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
+          class="w-10 h-10"
           viewBox="0 0 16 16"
         >
           <path
@@ -47,7 +50,6 @@
 </template>
 
 <script setup>
-import CircleBtn from '../components/CircleBtn.vue'
 import { ref } from 'vue'
 import projects from '../assets/projects.json'
 import ProjectCard from './ProjectCard.vue'

@@ -17,7 +17,7 @@
   // Mapa de cores incluindo palavras compostas
   const colorMap = {
     'JavaScript': 'bg-yellow',
-    'Vuex': 'bg-green',
+    'Pinia': 'bg-pinia',
     'Vue Router': 'bg-vue-router',
     'HTML': 'bg-orange',
     'Design Responsivo': 'bg-orange',
@@ -45,7 +45,7 @@
     font-size: 14px;
     display: inline-block;
   }
-
+  .bg-pinia { background-color: #FFE064;}
   .bg-yellow { background-color: #f7df1e; color: #000; }
   .bg-green { background-color: #42b883; }
   .bg-orange { background-color: #f16529; }

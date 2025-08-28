@@ -1,8 +1,11 @@
 <template>
-  <footer id="contact-links" class="mt-7 flex flex-col justify-center items-center pt-4 text-white">
-    <div class="w-full h-px bg-gradient-to-r from-[#9333ea] via-white to-[#9333ea] my-8"></div>
+  <footer id="contact-links" 
+    class="flex flex-col justify-center items-center pt-4 text-white">
+    <div class="w-full h-px my-2
+    bg-gradient-to-r from-[#9333ea] via-white to-[#9333ea] "></div>
     
-    <section id="contact" class="w-full flex flex-col items-center gap-4 py-8">
+    <section id="contact" 
+      class="w-full flex flex-col items-center gap-4 py-2">
       <h1 class="text-[var(--main-color)] text-3xl font-bold text-center">Vamos conversar?</h1>
       <p class="text-[var(--main-color)] text-2xl font-medium font-montserrat text-center">Envie sua mensagem.</p>
 
@@ -66,5 +69,5 @@
 </template>
 
 <script setup>
-import ContactLinks from './ContactLinks.vue';
+
 </script>
