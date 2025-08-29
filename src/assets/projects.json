@@ -9,6 +9,15 @@
     "status": "complete"
   },
   {
+    "name": "Landing page Máfia",
+    "tags": ["Design Responsivo", "Tailwind CSS"],
+    "technologies": ["TAILWIND", "PINIA", "VUEROUTER", "HTML", "JS"],
+    "image": "/projects/Mafia.png",
+    "github": "https://github.com/Andreivilla/landing-page-mafia",
+    "deploy": "https://andreivilla.github.io/landing-page-mafia/#/",
+    "status": "complete"
+  },
+  {
     "name": "Dashboard interativa",
     "tags": ["API externa", "Design Responsivo", "Temas"],
     "technologies": ["HTML", "CSS", "JS", "VUE"],
@@ -16,15 +25,6 @@
     "github": "https://github.com/Andreivilla/dashboard-vue",
     "deploy": "https://andreivilla.github.io/dashboard-vue/",
     "status": "complete"
-  },
-  {
-    "name": "Landing Page",
-    "tags": ["api-externa", "front-end responsivo", "websocket"],
-    "technologies": ["HTML", "CSS", "JS", "VUE"],
-    "image": "/projects/landingPage.png",
-    "github": "https://github.com/seuUsuario/gerenciador-de-tarefas",
-    "deploy": "https://gerenciador-tarefas.netlify.app",
-    "status": "not-started"
   },
   {
     "name": "Gerenciador de Tarefas",

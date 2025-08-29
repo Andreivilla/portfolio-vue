@@ -49,8 +49,7 @@
 
       <!-- links -->
       <div class="flex w-full gap-2 mt-2">
-        <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
-            class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
+        <a class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
                   font-sans text-xs font-bold uppercase text-white shadow-md 
                   transition-all hover:shadow-primary/20 
                   focus:opacity-[0.85] focus:shadow-none 
@@ -59,8 +58,7 @@
         :blank="true"
         :href="project.github">GitHub</a>
 
-        <a  href="https://docs.google.com/document/d/1Pp05teT0m8-p8WDjk2MrAawFzUsT0-viwOCf4DHk9Hk/edit?usp=sharing" 
-            class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
+        <a class="flex items-center gap-2 rounded-lg bg-primary py-3 px-6 
                   font-sans text-xs font-bold uppercase text-white shadow-md 
                   transition-all hover:shadow-primary/20 
                   focus:opacity-[0.85] focus:shadow-none 

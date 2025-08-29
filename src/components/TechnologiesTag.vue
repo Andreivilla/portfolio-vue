@@ -16,13 +16,15 @@
 
   // Mapa de cores incluindo palavras compostas
   const colorMap = {
-    'JavaScript': 'bg-yellow',
+    'JavaScript': 'bg-javascript',
     'Pinia': 'bg-pinia',
     'Vue Router': 'bg-vue-router',
-    'HTML': 'bg-orange',
-    'Design Responsivo': 'bg-orange',
-    'Temas': 'bg-blue',
-    'Bootstrap': 'bg-blue',
+    'HTML': 'bg-html',
+    'Bootstrap': 'bg-bootstrap',
+    'Design Responsivo': 'bg-responsivo',
+    'Temas': 'bg-temas',    
+    'Tailwind CSS': 'bg-tailwind',
+
     'API externa': 'bg-purple',
     'Machine Learning': 'bg-pink'
   }
@@ -46,12 +48,17 @@
     display: inline-block;
   }
   .bg-pinia { background-color: #FFE064;}
-  .bg-yellow { background-color: #f7df1e; color: #000; }
+  .bg-javascript { background-color: #f7df1e; color: #000; }
+  .bg-vue-router { background-color: #35495E; }
+  .bg-html { background-color: #f16529; }
+  .bg-bootstrap { background-color: #2965f1; }
+  .bg-responsivo { background-color: #FE7741; }
+  .bg-temas { background-color: #000A4A; }
+
   .bg-green { background-color: #42b883; }
-  .bg-orange { background-color: #f16529; }
-  .bg-blue { background-color: #2965f1; }
   .bg-purple { background-color: #8e44ad; }
   .bg-pink { background-color: #e91e63; }
   .bg-gray { background-color: #777; }
-  .bg-vue-router { background-color: #35495E; }
+  .bg-tailwind { background-color: #38BDF8;}
+
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <header class="sticky top-0 shadow-md z-50 bg-[#1A0033] max-w-screen-2xl mx-auto lg:px-16 px-4 flex flex-wrap items-center">
+  <header class="sticky top-0 shadow-md z-50 
+    bg-[#1A0033] max-w-screen-2xl mx-auto lg:px-16 px-4 flex flex-wrap 
+    items-center">
     <div class="flex-1 flex justify-between items-center">
         <a href="#main-content" class="font-logo text-4xl font-bold text-white my-2">Andrei Villa</a>
     </div>
